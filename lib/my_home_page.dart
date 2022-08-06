@@ -24,8 +24,12 @@ class _MyHomePageState extends State<MyHomePage> {
     await AwesomeNotifications().createNotification(
       content: NotificationContent(
         id: 1,
+        displayOnBackground: true,
+        displayOnForeground: true,
         channelKey: 'channelKey',
         title: 'This is Notification title',
+        // criticalAlert: true,
+        // fullScreenIntent: true,
         body: 'This is body of the Notification',
         bigPicture: 'https://miro.medium.com/max/880/0*SQy-aKEXu_WSoRd-.png',
         // Defining the size of the image
